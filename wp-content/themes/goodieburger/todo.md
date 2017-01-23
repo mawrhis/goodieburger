@@ -4,7 +4,9 @@ TO DO - goodieburger
 
 general
 --------------------
-* wp admin bar not showing
+* two language mutations
+* weekly special as sticky post - not possible in custom post types
+* favicon
 
 
 mobile version

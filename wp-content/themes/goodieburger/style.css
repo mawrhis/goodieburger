@@ -97,7 +97,7 @@ q {
     hyphens: none;
     quotes: none;
 }
-a{
+header a{
     color:white;
     text-decoration: none;
 }
@@ -204,7 +204,6 @@ h6 {
 }
 
 h1 {
-    margin-top: -2.5rem;
     margin-bottom: 1rem;
     font-size: 3rem;
     font-family: 'Roboto Condensed', sans-serif;
@@ -215,6 +214,7 @@ h1 {
     z-index: 1;
     margin-left: auto;
     margin-right: auto;
+    transform: translate(0rem, -2.5rem);
 
     display: inline-block;
 }
@@ -440,6 +440,34 @@ width:100%;
 .newsfeed{
 }
 
+.drinks{
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 3rem;
+    font-family: 'Noto Serif', serif;        
+    margin-bottom: 1rem;
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+    margin-right: 2rem;
+    font-weight: 700;
+}
+
+
+.drinks table{
+    margin-right: auto;
+    margin-left: auto;
+    width:100%;
+}
+
+
+.drinks table td:nth-child(2){
+float:right;
+}
+
+.drinks table td:nth-child(2):before{
+content:"...... ";
+}
+
 .fb-page{
     display: block !important;
 }
@@ -553,11 +581,15 @@ main{
     margin-top: unset;
 }
 
+
+
 .burger_item{
     float: none;
     margin-top: 6rem;
     width: 100%;
+    display: inline-block;
 }
+
 
 .burger_image{
 
@@ -571,6 +603,7 @@ main{
 .burger_image img{
 
 width:360px;
+    height: auto;
 
 }
 
@@ -676,3 +709,25 @@ width:440px;
      background-size: 26rem 26rem;
      transform: translate(-290px, 0rem);
  }
+.burger_image{
+
+    float:left;
+    width:520px;
+    margin-left: 40px;
+    margin-right: 40px;
+
+}
+
+.burger_image img{
+
+width:520px;
+
+}
+
+.burger_text{
+
+    float:left;
+    width:520px;
+    margin-left: 40px;
+    margin-right: 40px;
+}

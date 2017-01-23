@@ -30,26 +30,24 @@
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/cs_CZ/sdk.js#xfbml=1&version=v2.8";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+</script>
 
 <header>
-
-    <nav>
         <div id="menu">
+    <nav>
+
                     <div id="toggle">
-                     <a href="<?php $url = home_url();echo esc_url( $url );?>">
                     <img src="http://localhost/goodieburger/wp-content/themes/goodieburger/img/burger.svg" alt="Show" /></div>
-                    </a>
                     <div id="popout">
-                            <ul class="buttons">
+                            <div class="buttons">
                                 <?php wp_nav_menu(); ?>
-                            </ul>
+                            </div>
                     </div>
 
-        </div>
+
     </nav>
-    <div class="logo">
-        
-    </div>
+            </div>
+    <a href="<?php $url = home_url();echo esc_url( $url );?>"><div class="logo"></div></a>
 
 </header>

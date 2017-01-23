@@ -40,6 +40,8 @@ function create_post_type() {
       ),
       'public' => true,
       'has_archive' => true,
+      'taxonomies'  => array( 'category', 'post_tag' ),
+
     )
   );
 }
@@ -47,7 +49,7 @@ function create_post_type() {
 
 
 if ( function_exists( 'add_theme_support' ) ) { 
-    add_theme_support( 'post-thumbnails', array( 'post' ));
+    add_theme_support( 'post-thumbnails', array( 'post', 'burger_menu' ));
     set_post_thumbnail_size( 800, 600, true ); // default Post Thumbnail dimensions (cropped)
 
     // additional image sizes

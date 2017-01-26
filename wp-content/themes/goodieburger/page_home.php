@@ -44,7 +44,9 @@ Template Name: Home
                 <div class="newsfeed">
                     <div class="line"></div>                    
                     <h1>Aktuality</h1>
-                        <div class="fb-page" data-href="https://www.facebook.com/Goodie-Burger-364204630596330/?fref=ts" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Goodie-Burger-364204630596330/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Goodie-Burger-364204630596330/?fref=ts">Goodie Burger</a></blockquote></div>
+                    <div class="newsfeed_fb">
+                        <div class="fb-page" data-href="https://www.facebook.com/Goodie-Burger-364204630596330/?fref=ts" data-tabs="timeline" data-small-header="false" data-width="500px" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/Goodie-Burger-364204630596330/?fref=ts" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Goodie-Burger-364204630596330/?fref=ts">Goodie Burger</a></blockquote></div>
+                        </div>
                 </div>
             </div>
         </div>

@@ -292,6 +292,10 @@ p{
 }
 
 
+._2p3a .fb-pages, .fb-page iframe[style], .fb-page span {
+   width: 100% !important;
+}
+
 
 
 
@@ -309,6 +313,7 @@ header {
 main{
 
 margin-top: 16rem;
+width: 100%;
 }
 
 nav {
@@ -373,7 +378,7 @@ width:100%;
     margin-top: -7rem;
     margin-left: auto;
     margin-right: auto;
-    background-image: url("img/logo.png");
+    background-image: url("img/logo.svg");
      background-size: 15rem 15rem;
      border-radius: 15rem;
     -webkit-box-shadow: 0px 10px 40px -4px rgba(0,0,0,0.25);
@@ -421,10 +426,24 @@ width:100%;
     width:100%;
 }
 
+
 .speciality{
     margin-top: 5rem;
-    border: 2.3rem solid transparent;
-    border-image: url(img/line2.svg) 30 stretch;
+    border: 4px solid #442b20;
+    position: relative;
+    padding: 2rem;
+}
+
+.speciality::before{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    bottom:4px;
+    border: 2px solid #442b20;
+    background: white;
+    z-index: -1;
 }
 
 .stamp{
@@ -516,17 +535,18 @@ display:none;
 
 nav {
     width: 100%;
-    height: 18rem;
+    height: 16rem;
     background-image: url("img/bg.png");
-    background-size: 1100px ;
+    background-size: 1800px ;
     
 }
 
 .buttons{
-    width:600px;
+    width:500px;
     margin-left:auto;
     margin-right: auto;
-    transform: translate(150px, 120px);
+    transform: translate(170px, 105px);
+    font-size: 2.7rem;
     
 }
 
@@ -534,6 +554,21 @@ nav {
     margin-left: 1rem;
     float: left;
 }
+
+.buttons li:before{
+    width: 10px;
+    transform: translate(-8px, -10px);
+    font-size: 3px;
+
+}
+
+.buttons li:after{
+    width: 10px;
+    transform: translate(8px, -10px);
+    font-size: 3px;
+}
+
+
 .logo{
     width: 22rem;
     height: 22rem;
@@ -572,8 +607,10 @@ main{
     position: absolute;
     display: block;
     right: unset;
-    transform: translate(21rem, -3rem);
+    transform: translate(-7rem, -2rem);
     margin-top: -10rem;
+    width: 15rem;
+    height: 15rem;
 
 }
 
@@ -623,6 +660,31 @@ footer{
 
 /* This applies from 1200px onwards----------------------------------------------------------------*/
 @media only screen and (min-width: 1200px){
+
+nav {
+    height: 18rem;
+    
+}
+
+.buttons{
+    width: 600px;
+    font-size: 3rem;
+    transform: translate(200px, 115px);
+}
+
+.buttons li:before{
+    width: 20px;
+    transform: translate(-8px, -10px);
+    font-size: 3px;
+
+}
+
+.buttons li:after{
+    width: 20px;
+    transform: translate(8px, -10px);
+    font-size: 3px;
+}
+
 
 .main_inner{
     width: 1000px;
@@ -676,11 +738,36 @@ width:440px;
     margin-left: 30px;
     margin-right: 30px;
 }
+.stamp{
+    width: 16rem;
+    height: 16rem;
+
+}
+
+
 
 
  /* This applies from 1600px onwards----------------------------------------------------------------*/
 @media only screen and (min-width: 1600px){
 
+.buttons{
+    width: 600px;
+    font-size: 3.2rem;
+    transform: translate(170px, 115px);
+}
+
+.buttons li:before{
+    width: 30px;
+    transform: translate(-8px, -10px);
+    font-size: 3px;
+
+}
+
+.buttons li:after{
+    width: 30px;
+    transform: translate(8px, -10px);
+    font-size: 3px;
+}
 
 .main_inner{
     width: 1200px;
@@ -730,4 +817,10 @@ width:520px;
     width:520px;
     margin-left: 40px;
     margin-right: 40px;
+}
+
+.stamp{
+    width: 18rem;
+    height: 18rem;
+
 }

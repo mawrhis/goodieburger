@@ -292,8 +292,12 @@ p{
 }
 
 
-._2p3a .fb-pages, .fb-page iframe[style], .fb-page span {
-   width: 100% !important;
+
+
+.fb_iframe_widget{
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
@@ -311,7 +315,7 @@ header {
 }
 
 main{
-
+overflow: hidden;
 margin-top: 16rem;
 width: 100%;
 }
@@ -322,8 +326,49 @@ nav {
     background-color: #442b20;
     
 }
+.adress, .hours, .contact{
 
+  position: relative;
+  box-sizing: border-box;
+    margin-bottom: 3rem;
+}
 
+.footer_contact .adress, .footer_contact .hours, .footer_contact .contact{
+
+    margin-bottom: 0rem;
+    text-align: left;
+    margin-bottom: 3rem;
+}
+
+.contact_image{
+    width:4rem;
+    float:left;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+    left: 0rem;
+}
+
+.textwidget{
+    margin-left: 6rem;
+}
+
+#contact_box h2, #contact_box h3{
+    clear:none;
+    text-align:left;
+    display: inline-block;
+    width: 70%;
+    left: 1rem;
+    padding-left: 2rem;
+    font-size: 3rem;
+
+}
+
+#contact_box {
+   padding: 4rem;
+
+}
 
 /** hamburger menu */
 
@@ -386,8 +431,10 @@ width:100%;
     box-shadow: 0px 10px 40px -4px rgba(0,0,0,0.25);
 }
 
-.main{
+main{
     width: 100%;
+
+    margin-bottom: 8rem;
 }
 
 .main_inner{
@@ -446,6 +493,7 @@ width:100%;
     z-index: -1;
 }
 
+
 .stamp{
     position: absolute;
     display: block;
@@ -489,6 +537,103 @@ content:"...... ";
 
 .fb-page{
     display: block !important;
+}
+
+.language{
+    position: absolute;
+    margin: 2rem;
+   color: transparent;
+
+}
+
+.language a{
+   color: transparent;
+
+}
+
+
+.lang-item{
+    width: 4rem;    
+    height: 4rem;
+    filter: opacity(1);
+    border: solid white 3px;
+    border-radius:50px;
+
+}
+
+.lang-item-en{
+    background-image: url('img/en.svg');
+
+}
+
+.lang-item-cs{
+    background-image: url('img/cz.svg');
+
+}
+
+.lang-item-en:hover{
+    filter: opacity(1);
+
+}
+
+.lang-item-cs:hover{
+    filter: opacity(1);
+
+}
+
+.current-lang{
+display: none;
+
+}
+
+.burger_image img{
+    width:100%;
+    height: auto;
+}
+
+footer{
+
+    position: relative;
+}
+
+.map{
+}
+
+.footer_contact{
+        width:40%;
+        font-size: 2rem;
+        line-height:2rem;
+        background-color: rgba(256,256,256, 0.7);
+        padding: 3rem;
+        position: absolute;
+        right: 3rem;
+        bottom: 3rem;
+        z-index: 1;
+
+}
+
+.footer_contact .contact{
+margin-bottom: 0rem;
+}
+
+.footer_contact p{
+    clear: none;
+    text-align: left;
+    display: inline-block;
+    width: 80%;
+    left: 1rem;
+    padding-left: 2rem;
+    font-size: 1.8rem;
+}
+.shadow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-box-shadow: inset 0px 5px 14px 2px rgba(0,0,0,0.1);
+-moz-box-shadow: inset 0px 5px 14px 2px rgba(0,0,0,0.1);
+box-shadow: inset 0px 5px 14px 2px rgba(0,0,0,0.1);
+    top: 0;
+    left: 0;
 }
 
 /* This applies from 800px onwards----------------------------------------------------------------*/
@@ -580,10 +725,12 @@ nav {
 
 main{
 
-    margin-top: 8rem;
+    margin-top: 0rem;
+    margin-bottom: 8rem;
 }
 
 .main_inner{
+    margin-top: 10rem;
     width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -657,9 +804,27 @@ footer{
     clear: both;
 }
 
+.footer_contact{
+        width:20%;
+
+}
+
 
 /* This applies from 1200px onwards----------------------------------------------------------------*/
 @media only screen and (min-width: 1200px){
+
+h2{
+    font-size: 4rem;
+}
+
+h3{
+    font-size: 3rem;
+}
+
+#contact_box h2, #contact_boxh3{
+    font-size: 3rem;
+
+}
 
 nav {
     height: 18rem;
@@ -770,7 +935,7 @@ width:440px;
 }
 
 .main_inner{
-    width: 1200px;
+    width: 1400px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -778,12 +943,12 @@ width:440px;
 .inner_right{
     margin-left: 40px;
     margin-right: 40px;
-    width: 520px;
+    width: 620px;
     float:left;
 }
 
 .inner_left{
-    width: 520px; 
+    width: 620px; 
     float:left;   
     margin-left: 40px;
     margin-right: 40px;
@@ -794,12 +959,12 @@ width:440px;
     height: 26rem;
     margin-top: -17rem;
      background-size: 26rem 26rem;
-     transform: translate(-290px, 0rem);
+     transform: translate(-340px, 0rem);
  }
 .burger_image{
 
     float:left;
-    width:520px;
+    width:620px;
     margin-left: 40px;
     margin-right: 40px;
 
@@ -807,14 +972,14 @@ width:440px;
 
 .burger_image img{
 
-width:520px;
+width:620px;
 
 }
 
 .burger_text{
 
     float:left;
-    width:520px;
+    width:620px;
     margin-left: 40px;
     margin-right: 40px;
 }

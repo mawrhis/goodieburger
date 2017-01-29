@@ -50,7 +50,10 @@ jQuery(document).ready(function($) {
 </script>
 
 <header>
-        <div id="menu">
+    <div id="menu">
+    <div class="language">
+    <ul><?php pll_the_languages();?></ul>
+    </div>
     <nav>
 
                     <div id="toggle">

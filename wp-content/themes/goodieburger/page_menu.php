@@ -47,6 +47,6 @@ Template Name: Menu
                         <?php endif; ?>                     
         </div>
 
-
+</div> <!-- main inner -->
 
 <?php get_footer(); ?>

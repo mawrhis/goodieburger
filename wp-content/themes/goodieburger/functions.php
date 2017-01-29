@@ -62,3 +62,125 @@ function goodieburger_scripts() {
 wp_enqueue_script( 'wpb_slidepanel', get_template_directory_uri() . '/js/slidepanel.js', array('jquery'), false, true ); 
 }
 add_action( 'wp_enqueue_scripts', 'goodieburger_scripts' );
+
+
+//meta box
+
+
+add_filter( 'rwmb_meta_boxes', 'goodieburger_register_meta_boxes' );
+function goodieburger_register_meta_boxes( $meta_boxes ) {
+    $prefix = 'rw_';
+    // 1st meta box
+    $meta_boxes[] = array(
+        'id'         => 'adress_box',
+        'title'      => __( 'Adresa, otevírací doba, kontakty', 'goodieburger' ),
+        'post_types' => array( 'page' ),
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'fields' => array(
+            array(
+                'name'  => esc_html__( 'Adresa', 'goodieburger' ),
+                'id'    => 'adress',
+                'type'  => 'text',
+                'clone' => true,
+            ),
+            array(
+                'name'  => esc_html__( 'Otevírací doba', 'goodieburger' ),
+                'id'    => 'hours',
+                'type'  => 'text',
+                'clone' => true,
+            ),
+            array(
+                'name'  => esc_html__( 'Kontakty', 'goodieburger' ),
+                'id'    => 'contact',
+                'type'  => 'text',
+                'clone' => true,
+            ), 
+
+        )
+    );
+    // 2nd meta box
+     $meta_boxes[] = array(
+        'id'         => 'info_boxes',
+        'title'      => __( 'Doprava, informace', 'goodieburger' ),
+        'post_types' => array( 'page' ),
+        'context'    => 'normal',
+        'priority'   => 'high',
+        'fields' => array(            
+            array(
+                'name' => esc_html__( 'Doprava - nadpis', 'goodieburger' ),
+                'desc' => esc_html__( 'jak se k nám dostanete', 'goodieburger' ),
+                'id'   => "doprava_nadpis",
+                'type' => 'textarea',
+                'cols' => 15,
+                'rows' => 1,
+            ),
+            array(
+                'name' => esc_html__( 'Doprava', 'goodieburger' ),
+                'desc' => esc_html__( 'jak se k nám dostanete', 'goodieburger' ),
+                'id'   => "doprava",
+                'type' => 'textarea',
+                'cols' => 20,
+                'rows' => 4,
+            ),
+
+             array(
+                'name' => esc_html__( 'info - nadpis', 'goodieburger' ),
+                'desc' => esc_html__( 'dalsi informace', 'goodieburger' ),
+                'id'   => "info_nadpis",
+                'type' => 'textarea',
+                'cols' => 15,
+                'rows' => 1,
+            ),
+            array(
+                'name' => esc_html__( 'info', 'goodieburger' ),
+                'desc' => esc_html__( 'jak se k nám dostanete', 'goodieburger' ),
+                'id'   => "info",
+                'type' => 'textarea',
+                'cols' => 20,
+                'rows' => 4,
+            ),
+
+        )
+            );
+
+
+    return $meta_boxes;
+}
+
+
+/**
+ * Register our sidebars and widgetized areas.
+ *
+ */
+function goodieburger_widgets_init() {
+
+    register_sidebar( array(
+        'name'          => 'patka adresa',
+        'id'            => 'footer_kontakty_adresa',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="rounded">',
+        'after_title'   => '</h2>',
+    ) );
+
+        register_sidebar( array(
+        'name'          => 'patka oteviraci doba',
+        'id'            => 'footer_kontakty_doba',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="rounded">',
+        'after_title'   => '</h2>',
+    ) );
+
+        register_sidebar( array(
+        'name'          => 'patka kontakty',
+        'id'            => 'footer_kontakty',
+        'before_widget' => '<div>',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h2 class="rounded">',
+        'after_title'   => '</h2>',
+    ) );
+
+}
+add_action( 'widgets_init', 'goodieburger_widgets_init' );

@@ -9,14 +9,14 @@ fixes
 
 general
 --------------------
-* advanced custom fields for contact page
+* <strike>advanced custom fields for contact page</strike>
 * <strike>two language mutations</strike>
 * <strike>weekly special as sticky post</strike> - not possible in custom post types
 * favicon
 * test in IE, edge, opera, mozzilla
 * <strike> responzive fb feed </strike>
 * <strike>blog name in title</strike>
-* footer- adress + language switcher
+* <strike>footer- adress + language switcher</strike>
 * webaruv checklist
 
 

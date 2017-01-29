@@ -326,7 +326,14 @@ nav {
     background-color: #442b20;
     
 }
-.adress, .hours, .contact{
+.adress, .hours{
+
+  position: relative;
+  box-sizing: border-box;
+    margin-bottom: 3rem;
+}
+
+ .contact{
 
   position: relative;
   box-sizing: border-box;
@@ -350,7 +357,7 @@ nav {
     left: 0rem;
 }
 
-.textwidget{
+.footer_contact .textwidget{
     margin-left: 6rem;
 }
 

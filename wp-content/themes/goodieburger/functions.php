@@ -70,35 +70,7 @@ add_action( 'wp_enqueue_scripts', 'goodieburger_scripts' );
 add_filter( 'rwmb_meta_boxes', 'goodieburger_register_meta_boxes' );
 function goodieburger_register_meta_boxes( $meta_boxes ) {
     $prefix = 'rw_';
-    // 1st meta box
-    $meta_boxes[] = array(
-        'id'         => 'adress_box',
-        'title'      => __( 'Adresa, otevírací doba, kontakty', 'goodieburger' ),
-        'post_types' => array( 'page' ),
-        'context'    => 'normal',
-        'priority'   => 'high',
-        'fields' => array(
-            array(
-                'name'  => esc_html__( 'Adresa', 'goodieburger' ),
-                'id'    => 'adress',
-                'type'  => 'text',
-                'clone' => true,
-            ),
-            array(
-                'name'  => esc_html__( 'Otevírací doba', 'goodieburger' ),
-                'id'    => 'hours',
-                'type'  => 'text',
-                'clone' => true,
-            ),
-            array(
-                'name'  => esc_html__( 'Kontakty', 'goodieburger' ),
-                'id'    => 'contact',
-                'type'  => 'text',
-                'clone' => true,
-            ), 
 
-        )
-    );
     // 2nd meta box
      $meta_boxes[] = array(
         'id'         => 'info_boxes',
@@ -156,7 +128,7 @@ function goodieburger_register_meta_boxes( $meta_boxes ) {
 function goodieburger_widgets_init() {
 
     register_sidebar( array(
-        'name'          => 'patka adresa',
+        'name'          => 'adresa',
         'id'            => 'footer_kontakty_adresa',
         'before_widget' => '<div>',
         'after_widget'  => '</div>',
@@ -165,7 +137,7 @@ function goodieburger_widgets_init() {
     ) );
 
         register_sidebar( array(
-        'name'          => 'patka oteviraci doba',
+        'name'          => 'oteviraci doba',
         'id'            => 'footer_kontakty_doba',
         'before_widget' => '<div>',
         'after_widget'  => '</div>',
@@ -174,7 +146,7 @@ function goodieburger_widgets_init() {
     ) );
 
         register_sidebar( array(
-        'name'          => 'patka kontakty',
+        'name'          => 'kontakty',
         'id'            => 'footer_kontakty',
         'before_widget' => '<div>',
         'after_widget'  => '</div>',

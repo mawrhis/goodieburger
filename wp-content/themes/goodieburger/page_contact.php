@@ -12,25 +12,16 @@ Template Name: Kontakt
             <div class="speciality" id="contact_box">
 
             <div class="adress">
-                    <img class="contact_image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/pin.svg">
-                <h2><?php 
-                $adress = rwmb_meta( 'adress' ); 
-                echo implode(', ', $adress); 
-                ?></h2> 
+                    <img  alt="adress" class="contact_image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/pin.svg">
+                <h2><?php dynamic_sidebar( 'footer_kontakty_adresa' ); ?></h2> 
             </div> 
             <div class="hours"> 
-                <img class="contact_image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/hour.svg">      
-                <h3><?php 
-                $hours = rwmb_meta( 'hours' ); 
-                echo implode('<br>  ', $hours); 
-                ?></h3>
+                <img  alt="opening hours" class="contact_image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/hour.svg">      
+                <h3><?php dynamic_sidebar( 'footer_kontakty_doba' ); ?></h3>
             </div>
             <div class="contact">
-                <img class="contact_image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact.svg">
-                <h2><?php 
-                $contact = rwmb_meta( 'contact' ); 
-                echo implode('<br> ', $contact); 
-                ?></h2>
+                <img alt="contact" class="contact_image" src="<?php echo get_stylesheet_directory_uri(); ?>/img/contact.svg">
+                <h2><?php dynamic_sidebar( 'footer_kontakty' ); ?></h2>
             </div>
                 </div>
             <div class="about_us">

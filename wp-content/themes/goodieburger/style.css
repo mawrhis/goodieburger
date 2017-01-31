@@ -374,12 +374,12 @@ nav {
     width: 70%;
     left: 1rem;
     padding-left: 2rem;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
 
 }
 
 #contact_box {
-   padding: 4rem;
+   padding: 2rem;
    margin-top: 0rem;
 
 }
@@ -911,6 +911,12 @@ footer{
         padding: 3rem;
 
 }
+
+#contact_box h2, #contact_box h3{
+    font-size: 2.2rem;
+
+}
+
 }
 /* This applies from 1200px onwards----------------------------------------------------------------*/
 @media only screen and (min-width: 1200px){

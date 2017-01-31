@@ -18,6 +18,8 @@ general
 * <strike>blog name in title</strike>
 * <strike>footer- adress + language switcher</strike>
 * webaruv checklist
+* vycistit css soubor
+* jednotky v css souboru, viewporty, jak se v moderni dobe dela css?
 
 
 mobile version

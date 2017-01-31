@@ -12,6 +12,7 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
+    <meta charset="UTF-8">
     <title><?php get_bloginfo($show = 'name'). wp_title(); ?></title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400i|Roboto|Roboto+Condensed:700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">

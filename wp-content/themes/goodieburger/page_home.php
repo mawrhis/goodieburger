@@ -7,7 +7,7 @@ Template Name: Home
 <main>
     <div class="main_inner">
         <div class="inner_left">
-            <div class="slideshow"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/burger.jpg"></div>
+            <div class="slideshow"><?php echo photo_gallery(4); ?></div>
             <div class="about_us">
                 <div class="line"></div>
                 <h1><?php the_title(); ?></h1>

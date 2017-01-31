@@ -131,7 +131,7 @@ class PLL_Switcher {
 	 */
 	public function the_languages( $links, $args = '' ) {
 		$defaults = array(
-			'dropdown'               => 0, // display as list and not as dropdown
+			'dropdown'               => 1, // display as list and not as dropdown
 			'echo'                   => 1, // echoes the list
 			'hide_if_empty'          => 1, // hides languages with no posts ( or pages )
 			'menu'                   => 0, // not for nav menu ( this argument is deprecated since v1.1.1 )

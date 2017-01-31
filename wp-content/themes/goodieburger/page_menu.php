@@ -49,4 +49,7 @@ Template Name: Menu
 
 </div> <!-- main inner -->
 
+</main>
+
+
 <?php get_footer(); ?>

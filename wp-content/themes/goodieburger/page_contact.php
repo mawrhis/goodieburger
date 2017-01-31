@@ -26,11 +26,15 @@ Template Name: Kontakt
                 </div>
             <div class="about_us">
                 <div class="line"></div>
-                <h1>My a naše burgery</h1>
-                <p>Krátký text o nás a našich burgerech, z čeho jsou vyrobeny, proč to děláme atd. Plakal jo uhlím noční. Jo že inu téhož němé dobeš předtuchy. Zachovat kdy-bych nu mělkou bučí válí s zaječí </p>
+                <h1><?php 
+                        echo rwmb_meta( 'info_nadpis' );
+                        ?></h1>
+                <p><?php 
+                        echo rwmb_meta( 'info' );
+                        ?>  </p>
             </div>
             </div>
-                    <div class="inner_right">
+             <div class="inner_right">
                 <div class="newsfeed">
                     <div class="line"></div>                    
                     <h1>Kde nás najdete</h1>
@@ -53,9 +57,6 @@ Template Name: Kontakt
             </div>
         </div>
 
-        </div>
-        <br>
-    </div>
 </main>
 
 

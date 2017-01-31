@@ -13,5 +13,3 @@ $('#toggle').toggle(
 );
 })(jQuery);
 
-
-console.log(c);

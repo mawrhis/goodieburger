@@ -12,16 +12,19 @@
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> class="no-js">
 <head>
-    <title><?php get_bloginfo(). wp_title(); ?></title>
+    <title><?php get_bloginfo($show = 'name'). wp_title(); ?></title>
     <link href="https://fonts.googleapis.com/css?family=Noto+Serif:400i|Roboto|Roboto+Condensed:700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <meta charset="<?php bloginfo( 'charset' ); ?>">
-    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="<?php get_bloginfo($show = 'description')?><">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>">  
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">  
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <?php wp_head(); ?>
+
+
 </head>
 <body <?php body_class(); ?>>
 
@@ -46,9 +49,7 @@ jQuery(document).ready(function($) {
 }); 
 });
 
-
 </script>
-
 <header>
     <div id="menu">
     <div class="language">

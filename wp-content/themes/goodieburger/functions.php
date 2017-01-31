@@ -60,7 +60,11 @@ function goodieburger_scripts() {
 
 //hamburger menu
 wp_enqueue_script( 'wpb_slidepanel', get_template_directory_uri() . '/js/slidepanel.js', array('jquery'), false, true ); 
+wp_enqueue_script( 'wpb_mobile_logo', get_template_directory_uri() . '/js/mobile_logo.js', array('jquery'), false, true );
 }
+ 
+
+
 add_action( 'wp_enqueue_scripts', 'goodieburger_scripts' );
 
 

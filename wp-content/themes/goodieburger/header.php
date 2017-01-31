@@ -58,7 +58,7 @@ jQuery(document).ready(function($) {
     <nav>
 
                     <div id="toggle">
-                    <img src="http://localhost/goodieburger/wp-content/themes/goodieburger/img/burger.svg" alt="Show" /></div>
+                    <img src="http://test.jiriprihoda.com/wp-content/themes/goodieburger/img/burger.svg" alt="Show" /></div>
                     <div id="popout">
                             <div class="buttons">
                                 <?php wp_nav_menu(); ?>
